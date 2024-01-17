@@ -5,7 +5,7 @@ export const SearchBar = () => {
         Discover over 2,000,000 <br /> free Stock Images
       </h1>
 
-      <input />
+      <input placeholder="Search" />
       <p> Trending: flowers, love, forest, river </p>
     </div>
   );
