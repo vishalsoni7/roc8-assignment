@@ -2,37 +2,146 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url("../public//roc8-background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  color: #fff;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  width: -webkit-fill-available;
+  justify-content: space-between;
+  margin: 3rem 1.5rem 0 1.5rem;
+  height: 67.688px;
+  border-radius: 8.906px;
+  background: rgba(217, 217, 217, 0.12);
+  box-shadow: -3.943px 3.943px 3.943px 0px rgba(255, 255, 255, 0.43) inset,
+    3.943px -3.943px 3.943px 0px rgba(182, 182, 182, 0.43) inset;
+  backdrop-filter: blur(25.034873962402344px);
+}
+
+.navbar p {
+  margin: 0 0 0 1.5rem;
+  font-size: 17.813px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19.95px;
+}
+
+.navbar div {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: -webkit-fill-available;
+  gap: 1rem;
+  margin-right: 1.5rem;
+}
+
+.create-account {
+  color: #fff;
+  border-radius: 8.906px;
+  border: 2.672px solid #fff;
+  font-size: 17.813px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19.95px;
+  padding: 7.12px 13.73px 7.61px 14.25px;
+}
+
+.searchbar-div {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  width: -webkit-fill-available;
 }
 
-.App-link {
-  color: #61dafb;
+.searchbar-div input {
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  width: 757.031px;
+  height: 67.688px;
+  border-radius: 8.906px;
+  padding: 0 0 0 1rem;
+  background: rgba(217, 217, 217, 0.12);
+  box-shadow: -3.943px 3.943px 3.943px 0px rgba(255, 255, 255, 0.43) inset,
+    3.943px -3.943px 3.943px 0px rgba(182, 182, 182, 0.43) inset;
+  backdrop-filter: blur(25.034873962402344px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.searchbar-div h1 {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 3.563px 3.563px rgba(0, 0, 0, 0.25);
+  font-size: 71.25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 87.638px;
+}
+
+.searchbar-div p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 271.641px;
+  height: 39.188px;
+  font-size: 13.359px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21.375px;
+  border-radius: 8.906px;
+  color: rgba(255, 255, 255, 1);
+  background: rgba(217, 217, 217, 0.12);
+  box-shadow: -3.943px 3.943px 3.943px 0px rgba(255, 255, 255, 0.43) inset,
+    3.943px -3.943px 3.943px 0px rgba(182, 182, 182, 0.43) inset;
+  backdrop-filter: blur(25.034873962402344px);
+}
+
+@media screen and (max-width: 768px) {
+  .searchbar-div input {
+    width: 80%;
+    /* margin: 0 1rem; */
+    height: 45.688px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .searchbar-div h1 {
+    font-size: 36.25px;
+    line-height: 56.638px;
+  }
+
+  .searchbar-div p {
+    height: 30.641px;
+    width: 300px;
+    font-size: 12.359px;
+  }
+
+  .create-account {
+    border: 1px solid #fff;
+    font-size: 7.813px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19.95px;
+    padding: 4px 5px;
+  }
+
+  .navbar div {
+    gap: 0;
+    margin-right: 1rem;
+  }
+
+  .navbar {
+    margin: 1.5rem 0.5rem 0 0.5rem;
+    height: 50.688px;
+  }
+
+  .navbar p {
+    font-size: 13px;
+    margin-left: 1rem;
   }
 }
