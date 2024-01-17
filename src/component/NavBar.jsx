@@ -1,7 +1,7 @@
 export const NavBar = () => {
   return (
     <div className="navbar">
-      <p> Homepage </p>
+      <p> Home </p>
 
       <div>
         <p> Login </p>
